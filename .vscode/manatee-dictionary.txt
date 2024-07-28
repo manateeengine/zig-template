@@ -1,0 +1,4 @@
+# A cSpell dictionary for words that aren't Zig-specific, but common in Manatee projects
+
+jrkienle
+kienle

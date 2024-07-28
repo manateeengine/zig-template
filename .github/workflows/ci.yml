@@ -1,0 +1,33 @@
+name: CI
+'on':
+    pull_request: null
+    push:
+        branches:
+            - main
+jobs:
+    build-lint-test:
+        # TODO: For full multi-platform development, this should probably also run on Max and Linux
+        runs-on:
+            - windows-latest
+        steps:
+            -
+                name: Checkout Repo
+                uses: actions/checkout@v2
+            -
+                name: Setup Zig
+                uses: goto-bus-stop/setup-zig@v2
+                with:
+                    version: 0.13.0
+            -
+                name: Check Formatting
+                run: zig fmt --check .
+            -
+                name: Build Engine and Editor
+                run: zig build
+            -
+                name: Run Tests
+                run: zig build test
+            -
+                name: Generate Engine Documentation
+                run: zig build docs
+                if: github.ref == 'refs/heads/main'
