@@ -1,0 +1,10 @@
+# Zig doesn't have official support in cSpell (not as of July 2024 anyway), however we really enjoy
+# having proper spelling in our codebase. To get around this, we include this file to act as a Zig
+# dictionary for cSpell. Once this is built out a little bit more, we'll likely open a PR with
+# cSpell to make it official!
+
+usingnamespace
+
+argsAlloc
+deinit
+install_subdir

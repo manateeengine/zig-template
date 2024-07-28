@@ -1,0 +1,31 @@
+{
+    "cSpell.customDictionaries": {
+        "manatee": {
+            "name": "manatee",
+            "path": "${workspaceRoot}/.vscode/manatee-dictionary.txt",
+            "description": "Dictionary for words common in Manatee projects",
+            "addWords": true
+        },
+        "zig": {
+            "name": "zig",
+            "path": "${workspaceRoot}/.vscode/zig-dictionary.txt",
+            "description": "WIP Dictionary for adding Zig support to cSpell",
+            "addWords": true
+        },
+    },
+    "cSpell.enableFiletypes": [
+        "zig"
+    ],
+    "cSpell.language": "en",
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "files.eol": "\n", // Ensure Windows uses consistent line endings
+    "zig.buildOnSave": true,
+    "zig.zls.buildOnSaveStep": "check",
+    "zig.zls.enableAutofix": true,
+    "zig.zls.enableBuildOnSave": true,
+    "zig.zls.enableInlayHints": false,
+    "zig.zls.trace.server": "verbose",
+    "zig.zls.warnStyle": true,
+    "zig.zls.enableArgumentPlaceholders": false,
+}
